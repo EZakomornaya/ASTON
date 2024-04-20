@@ -6,6 +6,7 @@ public class Main {
         printThreeWords("Banana");
         printThreeWords("Apple");
     }
+
     public static void printThreeWords(String s) {
         System.out.println(s);
     }
