@@ -9,7 +9,7 @@ public class Massivq {
                 else mas[i][j] = 0;
                 System.out.print(mas[i][j] + " ");
             }
-                System.out.print("\n");
-    }
+            System.out.print("\n");
         }
     }
+}
