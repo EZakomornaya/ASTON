@@ -12,9 +12,7 @@ public class Main {
 
         compareNumbers();
 
-        boolean result = false;
-        result = isBetween(9, 19);
-        System.out.println(result);
+        System.out.println(isBetween(1, 1));
 
         toPosNegativ(7);
 
@@ -24,7 +22,7 @@ public class Main {
 
         toLine("Black", 7);
 
-        inYear(2024);
+        System.out.println(inYear(2024));
 
         changeMas();
 
@@ -45,11 +43,10 @@ public class Main {
 
     public static void checkSumSign() {
         int a = 3;
-        int b = 4;
-        int x = a + b;
-        if (x >= 0) {
+        int b = -4;
+        if ((a + b) >= 0) {
             System.out.println("Сумма положительная");
-        } else if (x < 0) {
+        } else  {
             System.out.println("Сумма отрицательная");
         }
     }
@@ -60,7 +57,7 @@ public class Main {
             System.out.println("Красный");
         } else if (value > 0 && value <= 100) {
             System.out.println("Желтый");
-        } else if (value > 100) {
+        } else  {
             System.out.println("Зеленый");
         }
     }
@@ -77,20 +74,14 @@ public class Main {
     }
 
     public static boolean isBetween(int a, int b) {
-        int sum = a + b;
-        if (sum >= 10 && sum < 20) {
-            return true;
-        } else {
-            return false;
-        }
+        boolean sum= ((a+b) >= 10 && (a+b) < 20); return sum;
     }
 
     public static void toPosNegativ(int a) {
-        if (a >= 0) {
-            System.out.println("Число положительное");
-        } else if (a < 0) {
+        if (a >= 0)
+           System.out.println("Число положительное");
+        else
             System.out.println("Число отрицательное");
-        }
     }
 
     public static boolean isNeg(int t) {
@@ -106,18 +97,14 @@ public class Main {
         for (r = 0; r < a; r++) System.out.println(h);
     }
 
-    public static void inYear(int year) {
+    public static boolean inYear(int year) {
         boolean leapyear = (
                 year > 1584 &&
                         (
                                 (year % 400 == 0) ||
                                         (year % 4 == 0 && year % 100 != 0)
                         )
-        );
-        if (leapyear)
-            System.out.println("Год " + year + " високосный");
-        else
-            System.out.println("Год " + year + " не високосный");
+        ); return leapyear;
     }
 
     public static void changeMas() {
@@ -127,7 +114,7 @@ public class Main {
                 i < sample.length; ++i) {
             if (sample[i] == 1) {
                 sample[i] = 0;
-            } else if (sample[i] == 0) {
+            } else {
                 sample[i] = 1;
             }
 
@@ -138,7 +125,7 @@ public class Main {
 
     public static void massivSto() {
         int mas[] = new int[100];
-        for (int v = 0; v < mas.length; v++) {
+        for (int v = 1; v < mas.length; v++) {
             mas[v] = v;
             System.out.print(mas[v] + " ");
         }
@@ -150,8 +137,6 @@ public class Main {
         for (int i = 0; i < mass.length; ++i) {
             if (mass[i] < 6) {
                 mass[i] = (mass[i] * 2);
-            } else if (mass[i] > 6) {
-                mass[i] = mass[i];
             }
             System.out.print(mass[i] + " ");
         }
@@ -163,7 +148,6 @@ public class Main {
         for (int i = 0; i < nas.length; i++) {
             for (int j = 0, p = nas[i].length - 1; j < nas[i].length; j++, p--) {
                 if (i == j || i == p) nas[i][j] = 1;
-                else nas[i][j] = 0;
                 System.out.print(nas[i][j] + " ");
             }
             System.out.print("\n");
