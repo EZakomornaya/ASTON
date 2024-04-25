@@ -16,9 +16,7 @@ public class Main {
 
         toPosNegativ(7);
 
-        boolean result1 = false;
-        result1 = isNeg(7);
-        System.out.println(result1);
+        System.out.println(isNeg(-3));
 
         toLine("Black", 7);
 
@@ -85,11 +83,8 @@ public class Main {
     }
 
     public static boolean isNeg(int t) {
-        if (t < 0) {
-            return true;
-        } else {
-            return false;
-        }
+        boolean d=(t < 0);
+            return d;
     }
 
     public static void toLine(String h, int a) {
