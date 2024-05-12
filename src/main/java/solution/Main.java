@@ -18,12 +18,12 @@ public class Main {
         cats[0] = new Cat("cat", "Bars", false);
         cats[1] = new Cat("cat", "Kotik", false);
         cats[2] = new Cat("cat", "Ryzhyk", false);
-        int plate=10;
+        int plate = 10;
         for (Cat cat : cats) {
-            System.out.println("Кот "+cat.iname+" сыт: "+cat.satiety);
+            System.out.println("Кот " + cat.iName + " сыт: " + cat.satiety);
             Cat.feedCats(plate, cats);
         }
-        System.out.println(Cat.addFoodAtPlate(plate,7));
+        System.out.println(Cat.addFoodAtPlate(plate, 7));
         Circle circle = new Circle(3);
         circle.setFillColor("White");
         circle.setBorderColor("Black");
@@ -36,7 +36,7 @@ public class Main {
         triangle.setFillColor("Blue");
         triangle.setBorderColor("Pink");
         triangle.printFeatures();
-}
+    }
 }
 
 

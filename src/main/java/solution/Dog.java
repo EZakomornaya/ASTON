@@ -1,24 +1,28 @@
 package solution;
 
 class Dog extends Animal {
-    String dname;
-    static int count=0;
-    public Dog(String name, String dname) {
+    String dName;
+    static int count = 0;
+
+    public Dog(String name, String dName) {
         this.name = name;
-        this.dname = dname;
+        this.dName = dName;
         count++;
     }
-    public static int getcount(){
+
+    public static int getcount() {
         return count;
     }
+
     public void run(int a) {
         if (a <= 500) {
-            System.out.println(name + dname + ".run(" + a + ");" + ": " + dname + " пробежал " + a + " м");
+            System.out.println(name + dName + ".run(" + a + ");" + ": " + dName + " пробежал " + a + " м");
         }
     }
+
     public void swim(int b) {
         if (b <= 10) {
-            System.out.println(name + dname + ".swim(" + b + ");" + ": " + dname + " проплыл " + b + " м");
+            System.out.println(name + dName + ".swim(" + b + ");" + ": " + dName + " проплыл " + b + " м");
         }
     }
 }

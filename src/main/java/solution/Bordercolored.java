@@ -1,5 +1,5 @@
 package solution;
 
-interface Bordercolored{
+interface Bordercolored {
     void setBorderColor(String color);
 }
