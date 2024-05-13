@@ -1,4 +1,4 @@
-package solution;
+package resolve;
 
 class Circle implements Form, Fillin, Bordercolored {
     private double radius;

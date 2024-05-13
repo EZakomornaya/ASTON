@@ -1,6 +1,6 @@
-package solution;
+package resolve;
 
-class Triangle implements Form, Fillin, Bordercolored {
+class Triangle implements resolve.Form, resolve.Fillin, resolve.Bordercolored {
     private double side1;
     private double side2;
     private double side3;

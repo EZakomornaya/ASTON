@@ -1,4 +1,4 @@
-package solution;
+package resolve;
 
 class Cat extends Animal {
     String iName;
@@ -29,7 +29,7 @@ class Cat extends Animal {
     }
 
     //Кормим кота (для сытости коту необходимо поесть на 5)
-    public static int feedCats(int plate, Cat[] cats) {
+    public static int feedCats(int plate, resolve.Cat[] cats) {
         for (Cat cat : cats) {
             if (!cat.satiety && plate >= 5) {
                 cat.satiety = true;

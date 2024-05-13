@@ -1,6 +1,6 @@
-package solution;
+package resolve;
 
-class Dog extends Animal {
+class Dog extends resolve.Animal {
     String dName;
     static int count = 0;
 

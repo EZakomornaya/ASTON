@@ -1,6 +1,6 @@
-package solution;
+package resolve;
 
-class Rectangle implements Form, Fillin, Bordercolored {
+class Rectangle implements resolve.Form, resolve.Fillin, resolve.Bordercolored {
     private double width;
     private double height;
     private String fillColor;

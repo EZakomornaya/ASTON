@@ -1,4 +1,4 @@
-package solution;
+package resolve;
 
 interface Form {
     double calculatePerimeter();
