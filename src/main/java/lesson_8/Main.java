@@ -57,19 +57,11 @@ public class Main {
         }
         System.out.println(sum);
     }
-
-    class MyArraySizeException extends Exception {
-        public MyArraySizeException(String message) {
-            super(message);
-        }
-    }
-
-    class MyArrayDataException extends NumberFormatException {
-        MyArrayDataException(int row, int col) {
-            super(String.format("Преобразование в элементе массива не удалось. Ячейка [" + row + "][" + col + "]"));
-        }
-    }
 }
+
+
+
+
 
 
 
