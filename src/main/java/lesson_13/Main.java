@@ -7,7 +7,7 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
         String[] array = {"cat", "dog", "hamster", "guinea pig", "fancy rat", "ferret",
-                "rabbit", "canary", "сat", "dog", "goldfish"};
+                "rabbit", "canary", "cat", "dog", "goldfish"};
         HashSet<String> uniqueWords = new HashSet<>();
         for (String word : array) {
             uniqueWords.add(word);
@@ -45,3 +45,4 @@ public class Main {
         }
     }
 }
+
