@@ -1,4 +1,5 @@
 package testng;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,7 +21,8 @@ public class FactorialCalculatorTest {
         try {
             calculator.factorial(-1);
             Assert.fail("Expected IllegalArgumentException for negative number");
-        } catch (IllegalArgumentException e) { // Expected exception
+        }
+        catch (IllegalArgumentException e) { // Expected exception
         }
     }
 }
