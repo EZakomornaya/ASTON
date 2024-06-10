@@ -1,7 +1,7 @@
 package testng;
 
 public class FactorialCalculator {
-    public int factorial(int n) {
+    public int calcFactorial(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("Factorial is not defined for negative numbers");
         }
