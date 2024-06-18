@@ -131,37 +131,37 @@ public class CheckMtsByTest {
         WebElement frame1 = driver.findElement(By.xpath("//iframe[@class='bepaid-iframe']"));
         driver.switchTo().frame(frame1);
         WebElement payCost = driver.findElement(By.xpath("//div[@class='pay-description__cost']"));
-        Assert.assertTrue(payCost.getText().contains("10"));
         WebElement payButton = driver.findElement(By.xpath("//button[@class='colored disabled']"));
-        Assert.assertTrue(payButton.getText().contains("10"));
         WebElement cellCheck = driver.findElement(By.xpath("//span[@class='pay-description__text']"));
-        Assert.assertTrue(cellCheck.getText().contains("375297777777"));
         WebElement cardFieldCheck = driver.findElement(By.xpath("//label[@class='ng-tns-c46-1 ng-star-inserted']"));
-        Assert.assertEquals(cardFieldCheck.getText(),
-                "Номер карты");
         WebElement validityFieldCheck = driver.findElement(By.xpath("//div[@class='content ng-tns-c46-4']"));
-        Assert.assertEquals(validityFieldCheck.getText(),
-                "Срок действия");
         WebElement cvcFieldCheck = driver.findElement(By.xpath("//label[@class='ng-tns-c46-5 ng-star-inserted']"));
-        Assert.assertEquals(cvcFieldCheck.getText(),
-                "CVC");
         WebElement nameHolderFieldCheck = driver.findElement(By.xpath("//label[@class='ng-tns-c46-3 ng-star-inserted']"));
-        Assert.assertEquals(nameHolderFieldCheck.getText(),
-                "Имя держателя (как на карте)");
         WebElement iconMastercardCheck = driver.findElement(By.xpath("(//img[@class='ng-tns-c61-0 ng-star-inserted'])[1]"));
-        Assert.assertTrue(iconMastercardCheck.isDisplayed());
         WebElement iconVisaCheck = driver.findElement(By.xpath("(//img[@class='ng-tns-c61-0 ng-star-inserted'])[2]"));
-        Assert.assertTrue(iconVisaCheck.isDisplayed());
         WebElement iconBelkardCheck = driver.findElement(By.xpath("(//img[@class='ng-tns-c61-0 ng-star-inserted'])[3]"));
-        Assert.assertTrue(iconBelkardCheck.isDisplayed());
         WebElement iconMirCheck = driver.findElement(By.xpath(
                 "//div[@class='cards-brands cards-brands_random ng-tns-c61-0 ng-star-inserted']"));
-        Assert.assertTrue(iconMirCheck.isDisplayed());
         WebElement yandexCheck = driver.findElement(By.xpath(
                 "//button[@class='ya-pay-button ya-pay-button_black']"));
-        Assert.assertTrue(yandexCheck.isDisplayed());
         WebElement googleCheck = driver.findElement(By.xpath(
                 "//button[@id='gpay-button-online-api-id']"));
+        Assert.assertTrue(payCost.getText().contains("10"));
+        Assert.assertTrue(payButton.getText().contains("10"));
+        Assert.assertTrue(cellCheck.getText().contains("375297777777"));
+        Assert.assertEquals(cardFieldCheck.getText(),
+                "Номер карты");
+        Assert.assertEquals(validityFieldCheck.getText(),
+                "Срок действия");
+        Assert.assertEquals(cvcFieldCheck.getText(),
+                "CVC");
+        Assert.assertEquals(nameHolderFieldCheck.getText(),
+                "Имя держателя (как на карте)");
+        Assert.assertTrue(iconMastercardCheck.isDisplayed());
+        Assert.assertTrue(iconVisaCheck.isDisplayed());
+        Assert.assertTrue(iconBelkardCheck.isDisplayed());
+        Assert.assertTrue(iconMirCheck.isDisplayed());
+        Assert.assertTrue(yandexCheck.isDisplayed());
         Assert.assertTrue(googleCheck.isDisplayed());
         driver.switchTo().defaultContent();
     }
